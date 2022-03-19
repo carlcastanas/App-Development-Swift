@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zOt-z3-cF6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="eeI-KN-t1G">
+            <objects>
+                <viewController id="zOt-z3-cF6" customClass="MasterViewController" customModule="SpotifySignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C52-Xj-uFI"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWs-hR-cwl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uf0-Ze-tjp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="8JO-BJ-ben">
+                                <rect key="frame" x="78" y="71" width="218" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="L2Y-eK-5I6"/>
+                                    <constraint firstAttribute="height" constant="66" id="bMC-dt-dQ7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmV-u8-uaA">
+                                <rect key="frame" x="187.5" y="587" width="187.5" height="80"/>
+                                <color key="backgroundColor" red="0.089431285858154297" green="0.68066966533660889" blue="0.0118274986743927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GJq-Hm-Dd7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="0.99969649314880371" green="0.99999141693115234" blue="0.99967747926712036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4Y-Db-ZWZ">
+                                <rect key="frame" x="0.0" y="587" width="187.5" height="80"/>
+                                <color key="backgroundColor" red="0.26977372169494629" green="0.26977372169494629" blue="0.26977372169494629" alpha="0.80385638297872342" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="AQH-Gz-0GB"/>
+                                    <constraint firstAttribute="height" constant="80" id="HhF-te-6yd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.99969649314880371" green="0.99999141693115234" blue="0.99967747926712036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AQH-Gz-0GB"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8JO-BJ-ben" firstAttribute="top" secondItem="C52-Xj-uFI" secondAttribute="bottom" constant="51" id="6me-PV-s8A"/>
+                            <constraint firstItem="LmV-u8-uaA" firstAttribute="leading" secondItem="z4Y-Db-ZWZ" secondAttribute="trailing" id="CvR-06-LPa"/>
+                            <constraint firstItem="z4Y-Db-ZWZ" firstAttribute="width" secondItem="LmV-u8-uaA" secondAttribute="width" id="F50-HK-WCR"/>
+                            <constraint firstAttribute="trailing" secondItem="LmV-u8-uaA" secondAttribute="trailing" id="Msq-AI-Fah"/>
+                            <constraint firstItem="z4Y-Db-ZWZ" firstAttribute="leading" secondItem="Uf0-Ze-tjp" secondAttribute="leading" id="YjO-iK-ocz"/>
+                            <constraint firstAttribute="bottom" secondItem="LmV-u8-uaA" secondAttribute="bottom" id="bgR-Cp-4t7"/>
+                            <constraint firstAttribute="bottom" secondItem="z4Y-Db-ZWZ" secondAttribute="bottom" id="eL5-qK-ROb"/>
+                            <constraint firstItem="8JO-BJ-ben" firstAttribute="centerX" secondItem="Uf0-Ze-tjp" secondAttribute="centerX" id="zmg-nt-Ey5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qU-J0-6Ft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.19999999999999" y="356.89655172413796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
